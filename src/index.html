@@ -79,16 +79,20 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                I am a dedicated Software developer who specializes in
-                developing full-stack applications using practical frameworks.I
-                am passionate about solving problems—a good solution usually
-                requires a dose of creativity that then requires more effort to
-                adapt and perfect.
+                I am a dedicated Software Developer specializing in building
+                scalable full-stack applications using modern frameworks and
+                cloud-native architectures. With over 5 years of experience, I
+                design and develop high-performance systems across frontend,
+                backend, and cloud environments. I am passionate about solving
+                real-world problems, crafting practical, efficient solutions that
+                combine creativity, technical depth, and continuous refinement.
               </p>
               <p class="about-wrapper__info-text">
-                I speacialize in Angular | Reactjs | NodeJs | ExpressJs |
-                MongoDB | Redux | CSS | SCSS | HTML | Javascript | Typescript |
-                Firebase | Python | Socket.IO | Multer | React Hooks |
+                I specialize in Angular | React.js | Node.js | Express.js |
+                MongoDB | PostgreSQL | Redux | TypeScript | JavaScript | HTML |
+                CSS | SCSS | Firebase | Python | Socket.IO | Multer | AWS (EC2,
+                S3, RDS) | CI/CD | AI/LLM Integration | Prompt Engineering |
+                Semantic Search Systems.
               </p>
               <p class="about-wrapper__info-text">I love to code and create.</p>
               <span class="d-flex mt-3">
@@ -517,7 +521,7 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2025 - All rights reserved
+          © <span id="current-year"></span> - All rights reserved
           <a
             rel="noreferrer"
             href="https://www.linkedin.com/in/avinash-verma-ab0021b5/"
@@ -531,6 +535,8 @@
 
     <script defer type="module" src="index.js"></script>
     <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
       const note = document.getElementById("notify");
       note.style.display = "none";
       function copyEmail() {
