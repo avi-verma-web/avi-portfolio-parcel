@@ -146,3 +146,30 @@
   #projects .project-wrapper__text-title { font-size: 2rem; }
   #projects .project-wrapper__text p { font-size: 1.45rem; }
 }
+
+
+#skills {
+  background: #f5f8fb;
+  padding: 7rem 0;
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem;
+  }
+
+  .skill-group {
+    padding: 2.2rem 2.4rem;
+    border: 1px solid rgba(25, 45, 70, .09);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(22, 40, 65, .05);
+
+    h3 { color: #087f8c; font-size: 1.65rem; margin-bottom: .8rem; }
+    p { color: #526174; font-size: 1.45rem; line-height: 1.7; margin: 0; }
+  }
+}
+
+@media (max-width: 575px) {
+  #skills .skills-grid { grid-template-columns: 1fr; }
+}
